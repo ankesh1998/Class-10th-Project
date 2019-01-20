@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | Pollution</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+</head>
+<body>
+	<h1 style="margin-left:180px ">Pollution</h1>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="1.jpeg" style="width:100%">
+  <div class="text">Air Pollution</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="2.jpg" style="width:100%">
+  <div class="text">Sand Pollution</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="3.jpg" style="width:100%">
+  <div class="text">Dump Yard</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="6.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br>
+<div style="margin: 0px 180px 0px 180px" align="justify">
+Pollution, also called <i>environmental pollution</i>, the addition of any substance (solid, liquid, or gas) or any form of energy (such as heat, sound, or radioactivity) to the environment at a rate faster than it can be dispersed, diluted, decomposed, recycled, or stored in some harmless form.<br><br> The major kinds of pollution, usually classified by environment, are <u>air pollution</u>,<u>water pollution</u>, and <u> land pollution</u>.<br> Modern society is also concerned about specific types of pollutants, such as <u> noise pollution</u>,<u> light pollution</u>, and <u>plastic pollution</u>. Pollution of all kinds can have negative effects on the environment and wildlife and often impacts human health and well-being.</div>
+<br><br>
+<h2 style="margin: 0px 180px 0px 180px">History Of Pollution</h2><hr><br><br>
+<div style="margin: 0px 180px 0px 180px" align="justify">Although environmental pollution can be caused by natural events such as <u> forest fires</u> and <u> active volcanoes</u>, use of the word pollution generally implies that the contaminants have an anthropogenic source—that is, a source created by human activities. Pollution has accompanied humankind ever since groups of people first congregated and remained for a long time in any one place.<br><br> Indeed, ancient human settlements are frequently recognized by their wastes—shell mounds and rubble heaps, for instance. Pollution was not a serious problem as long as there was enough space available for each individual or group. However, with the establishment of permanent settlements by great numbers of people, pollution became a problem, and it has remained one ever since.<br><br>Cities of ancient times were often noxious places, fouled by human wastes and debris. Beginning about 1000 CE, the use of coal for fuel caused considerable air pollution, and the conversion of coal to coke for iron smelting beginning in the 17th century exacerbated the problem. In Europe, from the Middle Ages well into the early modern era, unsanitary urban conditions favoured the outbreak of population-decimating epidemics of disease, from plague to cholera and typhoid fever. Through the 19th century, water and air pollution and the accumulation of solid wastes were largely problems of congested urban areas. But, with the rapid spread of industrialization and the growth of the human population to unprecedented levels, pollution became a universal problem.</div><br><br>
+
+<h2 style="margin: 0px 180px 0px 180px">Types Of Pollution</h2><hr><br>
+<div style="margin: 0px 180px 0px 180px">
+	<ol type="1">
+  <a href="airpollution.html"  target="_self"> <li>Air Pollution</li></a>
+  <a href="waterpollution.html"  target="_self"><li>Water Pollution</li></a>
+  <a href="soilpollution.html"  target="_self"><li>Soil Pollution</li></a>
+  <a href="noisepollution.html"  target="_self"><li>Noise Pollution</li></a>
+  <!--<a href="" style="text-decoration: none"><li>Radioactive Pollution</li></a>
+  <a href="" style="text-decoration: none"><li>Light Pollution</li></a>-->
+</ol></div>
+
+<h2 style="margin: 0px 180px 0px 180px">Pollution Control</h2><hr><br><br>
+<div style="margin: 0px 180px 100px 180px" align="justify">The presence of environmental pollution raises the issue of pollution control. Great efforts are made to limit the release of harmful substances into the environment through <u> air pollution control</u>,<u>wastewater treatment</u>,<u> solid-waste management</u>,<u> hazardous-waste management</u>, and <u>recycling </u>.<br><br> Unfortunately, attempts at pollution control are often surpassed by the scale of the problem, especially in less-developed countries. Noxious levels of air pollution are common in many large cities, where particulates and gases from transportation, heating, and manufacturing accumulate and linger. The problem of plastic pollution on land and in the oceans has only grown as the use of single-use plastics has burgeoned worldwide. In addition, greenhouse gas emissions, such as methane and carbon dioxide, continue to drive global warming and pose a great threat to biodiversity and public health.</div>
+</body>
+</html>
